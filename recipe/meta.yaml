@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -39,7 +39,9 @@ about:
   summary: Python wrapper for μPlot time series.
   dev_url: https://github.com/stephane-caron/uplot-python
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - NOTICE
+    - LICENSE
 
 extra:
   recipe-maintainers:
